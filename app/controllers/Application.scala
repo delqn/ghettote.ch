@@ -19,14 +19,6 @@ object Application extends Controller {
       }
   }
 
-  def login = Action {
-    Ok(views.html.login())
-  }
-
-  def logout = Action {
-    Redirect(controllers.routes.Application.index).withNewSession
-  }
-
   def webService = Action {
     Ok(views.html.zealot()).as("application/json")
   }
