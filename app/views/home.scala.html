@@ -1,33 +1,5 @@
-@(user: Option[User], title: String = "Escape")(content: Html)
+@(user: Option[User], title: String = "GhettoTe.ch")(content: Html)
 
 @main(title) {
-    <!--a class="selected" href="@routes.Application.index">Home</a-->
-	@if(user.isDefined) {
-      <div id="menu">
-
-          <button class="btn btn-xs btn-primary" type="button"
-                  href="@routes.Facebook.listFacebookFriends">Your Friends</button>
-          <button class="btn btn-xs btn-success" type="button"
-                  href="@routes.Facebook.listMyCheckins">Your Checkins</button>
-          <button class="btn btn-xs btn-info" type="button"
-                  href="@routes.Facebook.listMyPhotos">Your Photos</button>
-          <button class="btn btn-xs btn-danger" type="button"
-                  href="@routes.Application.logout">Logout</button>
-      </div>
-    } else {
-      <div class="clear"></div>
-      <div id="steps_container">
-          <ul>
-              <li><div class="number">1.</div><div class="steps">discover where<br/>to escape</div></li>
-              <li><div class="number">2.</div><div class="steps">invite people<br/>who matter</div></li>
-              <li><div class="number">3.</div><div class="steps">organize a perfect<br/>trip together</div></li>
-          </ul>
-      </div>
-      <div class="clear"></div>
-      <center>
-          <br/><br/><br/><br/><br/><br/>
-        <a class="unselected fbloginsprite" href="facebook/login"></a>
-      </center>
-    }
-    <p>@content</p>
+  <p>@content</p>
 }
