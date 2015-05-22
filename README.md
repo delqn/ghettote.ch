@@ -16,10 +16,10 @@ Play commands:
 
 Heroku commands:
 
-1. create a database for the app: `$ heroku addons:create heroku-postgresql`
-2. connect to the database with `heroku pg:psql`
-3. Add Postgres backups with `$ heroku addons:add pgbackups`
-
+* create a database for the app: `$ heroku addons:create heroku-postgresql`
+* connect to the database with `heroku pg:psql`
+* add Postgres backups with `$ heroku addons:add pgbackups`
+* adding a domain `$ heroku domains:add www.ghettote.ch`
 
 Install postgresql on OS X from http://postgresapp.com
 
