@@ -1,0 +1,10 @@
+@(user: Option[User], message: String)
+
+@home(user, "Escape") {
+
+<p>@message</p>
+
+@if(user.isDefined) {
+<a class="unselected" href="@routes.Facebook.listFacebookFriends">Friends</a>
+}
+}
