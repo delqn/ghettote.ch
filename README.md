@@ -29,3 +29,8 @@ Postgress DB maintenance:
 * curl -o latest.dump `heroku pgbackups:url` # To download a dump
 * pg_restore --data-only --file=out.sql latest.dump
 * psql -f ./out.sql
+
+
+TODO:
+
+* how do you apply DB Migrations?
