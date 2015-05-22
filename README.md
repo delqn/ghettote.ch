@@ -43,4 +43,17 @@ Regarding the integration between IntelliJ and Play:
 * Delete all existing idea related directories
 * Then in IntelliJ IDEA click File -> Open and choose your build.sbt file. That's all.
 
-(http://stackoverflow.com/questions/16135716/how-to-use-intellij-with-play-framework-and-scala)
+source: (http://stackoverflow.com/questions/16135716/how-to-use-intellij-with-play-framework-and-scala)
+
+
+
+Important structure for the Scala Play App:
+
+The /project directory
+All the build configuration is stored in the project directory. This folder contains 3 main files:
+
+build.properties: This is a marker file that describes the sbt version used.
+Build.scala: This is the application project build description.
+plugins.sbt: SBT plugins used by the project build.
+
+source: (https://www.playframework.com/documentation/2.0/Build)
