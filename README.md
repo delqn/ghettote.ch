@@ -19,3 +19,6 @@ Heroku commands:
 1. create a database for the app: `$ heroku addons:create heroku-postgresql`
 2. connect to the database with `heroku pg:psql`
 3. Add Postgres backups with `$ heroku addons:add pgbackups`
+
+
+Install postgresql on your mack: `$ brew install postgresql`
