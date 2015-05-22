@@ -34,3 +34,13 @@ Postgress DB maintenance:
 TODO:
 
 * how do you apply DB Migrations?
+
+
+
+Regarding the integration between IntelliJ and Play:
+
+* It is no longer necessary to create the module from play/activator.
+* Delete all existing idea related directories
+* Then in IntelliJ IDEA click File -> Open and choose your build.sbt file. That's all.
+
+(http://stackoverflow.com/questions/16135716/how-to-use-intellij-with-play-framework-and-scala)
