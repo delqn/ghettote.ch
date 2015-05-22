@@ -21,7 +21,7 @@ Heroku commands:
 3. Add Postgres backups with `$ heroku addons:add pgbackups`
 
 
-Install postgresql on your mack: `$ brew install postgresql`
+Install postgresql on OS X from http://postgresapp.com
 
 Postgress DB maintenance:
 
