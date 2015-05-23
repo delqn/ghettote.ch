@@ -102,3 +102,4 @@ $ git clone https://github.com/heroku/play-getting-started.git
 $ cd play-getting-started
 $ sbt compile stage
 $ foreman start web
+sbt \~compile stage
