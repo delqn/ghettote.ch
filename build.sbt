@@ -1,9 +1,6 @@
-name := "ghettotech"
+name := """play-getting-started"""
 
-organization := "com.github.hellschreiber"
-
-version := "1.1"
-
+version := "1.0-SNAPSHOT"
 
 lazy val root = (project in file(".")).enablePlugins(PlayScala)
 
@@ -15,3 +12,5 @@ libraryDependencies ++= Seq(
   cache,
   ws
 )
+
+libraryDependencies <+= scalaVersion("org.scala-lang" % "scala-compiler" % _ )

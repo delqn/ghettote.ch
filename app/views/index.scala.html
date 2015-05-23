@@ -1,8 +1,7 @@
-@(user: Option[User], message: String)
+@(message: String)
 
-@home(user, "gt") {
+@main("Welcome to Play") {
 
-  <p>@message</p>
+    @play20.welcome(message)
 
-  @if(user.isDefined) { }
 }

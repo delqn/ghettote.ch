@@ -1,3 +1,0 @@
-#!/bin/bash
-
-grep -Iir "$1" * | grep -v "target/" | grep -v "logs" | grep -v "tcpdump.txt" | awk -F":" '{print $1}' | sort | uniq | grep -v "\#"
