@@ -1,4 +1,4 @@
-# play-getting-started
+# ghettote.ch
 
 A barebones Play app, which can easily be deployed to Heroku.  
 
@@ -9,8 +9,8 @@ This application support the [Getting Started with Play on Heroku](https://devce
 Make sure you have Play and sbt installed.  Also, install the [Heroku Toolbelt](https://toolbelt.heroku.com/).
 
 ```sh
-$ git clone https://github.com/heroku/play-getting-started.git
-$ cd play-getting-started
+$ git clone https://github.com/heroku/ghettote.ch.git
+$ cd ghettote.ch
 $ sbt compile stage
 $ foreman start web
 ```

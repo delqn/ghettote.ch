@@ -1,4 +1,4 @@
-name := """play-getting-started"""
+name := """ghettote.ch"""
 
 version := "1.0-SNAPSHOT"
 
