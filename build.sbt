@@ -1,4 +1,4 @@
-name := """ghettote.ch"""
+name := """ghettotech"""
 
 version := "1.0-SNAPSHOT"
 
