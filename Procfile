@@ -1,2 +1,2 @@
-web: target/universal/stage/bin/ghettote.ch -Dhttp.port=${PORT}
-console: target/universal/stage/bin/ghettote.ch -main scala.tools.nsc.MainGenericRunner -usejavacp
+web: target/universal/stage/bin/ghettotech -Dhttp.port=${PORT}
+console: target/universal/stage/bin/ghettotech -main scala.tools.nsc.MainGenericRunner -usejavacp
