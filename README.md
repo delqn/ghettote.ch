@@ -15,7 +15,7 @@ Make sure you have Play and sbt installed.  Also, install the [Heroku Toolbelt](
 $ git clone https://github.com/heroku/ghettotech.git
 $ cd ghettotech
 $ sbt compile stage
-$ <del>foreman start web</del>heroku local web
+$ <del>foreman start web</del><del>heroku local web</del>activator && ~ run
 ```
 
 Your app should now be running on [localhost:5000](http://localhost:5000/).
