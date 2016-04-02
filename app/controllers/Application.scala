@@ -1,6 +1,5 @@
 package controllers
 
-import play.api.GlobalSettings
 import play.api.mvc.Action
 import play.api.mvc.Controller
 
@@ -20,6 +19,9 @@ object Application extends Controller {
   }
 
   def api = Action {
+    val u = new User(1, "de@delqn.com", "Delyan")
+    User.create(u)
+    System.out.println(u)
     Ok("{}").as("application/json")
   }
 

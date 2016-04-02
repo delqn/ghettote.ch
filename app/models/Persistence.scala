@@ -7,8 +7,6 @@ class Persistence {
 import org.squeryl._
 import org.squeryl.PrimitiveTypeMode._
 import org.squeryl.Schema
-import org.squeryl.annotations.Column
-import org.squeryl.KeyedEntity
 import org.squeryl.dsl.{OneToMany, ManyToOne}
 
 object Database extends Schema {
