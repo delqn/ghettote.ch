@@ -20,8 +20,10 @@ object Application extends Controller {
 
   def api = Action {
     val u = new User(1, "de@delqn.com", "Delyan")
-    User.create(u)
-    System.out.println(u)
+    System.out.println(u.email)
+    models.User.create(u)
+    // User.create(u)
+    // System.out.println(u)
     Ok("{}").as("application/json")
   }
 
