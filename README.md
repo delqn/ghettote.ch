@@ -1,10 +1,13 @@
 # ghettotech
 
-A barebones Play app, which can easily be deployed to Heroku.  
+A barebones Play app, which can easily be deployed to Heroku.
 
 This application support the [Getting Started with Play on Heroku](https://devcenter.heroku.com/articles/getting-started-with-play-on-heroku) article - check it out.
 
 ## Running Locally
+
+### Install Play:
+ - `brew install typesafe-activator`
 
 Make sure you have Play and sbt installed.  Also, install the [Heroku Toolbelt](https://toolbelt.heroku.com/).
 
@@ -12,7 +15,7 @@ Make sure you have Play and sbt installed.  Also, install the [Heroku Toolbelt](
 $ git clone https://github.com/heroku/ghettotech.git
 $ cd ghettotech
 $ sbt compile stage
-$ foreman start web
+$ <del>foreman start web</del>heroku local web
 ```
 
 Your app should now be running on [localhost:5000](http://localhost:5000/).
