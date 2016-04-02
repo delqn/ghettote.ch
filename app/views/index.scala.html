@@ -1,8 +1,11 @@
 @(user: Option[User], message: String)
 
-@home(user, "gt") {
+@main("gt") {
+    <p>@message</p>
 
-  <p>@message</p>
-
-  @if(user.isDefined) { }
+    @if(user.isDefined) {
+        <span>user is loggedin</span>
+    } else {
+        <span>user is not loggedin</span>
+    }
 }

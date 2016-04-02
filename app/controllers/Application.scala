@@ -12,15 +12,15 @@ object Application extends Controller {
     request =>
       val session = request.session
       session.get("connected").map { email =>
-        val user = User(email);
+        val user = User(email)
         Ok(views.html.index(Some(user), "Hello, " + user.fullname + "!"))
       }.getOrElse {
         Ok(views.html.index(None, "Not logged in"))
       }
   }
 
-  def webService = Action {
-    Ok(views.html.zealot()).as("application/json")
+  def api = Action {
+    Ok("{}").as("application/json")
   }
 
   def translit = Action {
