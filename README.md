@@ -106,3 +106,8 @@ $ cd play-getting-started
 $ sbt compile stage
 $ foreman start web
 sbt \~compile stage
+
+
+---
+
+Configure IntelliJ: https://www.jetbrains.com/help/idea/2016.1/getting-started-with-play-2-x.html?origin=old_help#use_code_assistance

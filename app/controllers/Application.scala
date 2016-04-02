@@ -22,4 +22,8 @@ object Application extends Controller {
   def webService = Action {
     Ok(views.html.zealot()).as("application/json")
   }
+
+  def translit = Action {
+    request => Ok(views.html.translit("hey"))
+  }
 }
