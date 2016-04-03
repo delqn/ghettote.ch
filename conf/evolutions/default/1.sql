@@ -2,8 +2,8 @@
 
 # --- !Ups
 
-CREATE TABLE "user" (
-    id bigint(20) NOT NULL AUTO_INCREMENT,
+CREATE TABLE "users" (
+    id serial NOT NULL,
     email varchar(255) NOT NULL,
     password varchar(255) NOT NULL,
     fullname varchar(255) NOT NULL,
@@ -13,4 +13,4 @@ CREATE TABLE "user" (
 
 # --- !Downs
 
-DROP TABLE "user";
+DROP TABLE "users";
