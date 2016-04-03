@@ -15,7 +15,7 @@ libraryDependencies ++= Seq(
 
 libraryDependencies <+= scalaVersion("org.scala-lang" % "scala-compiler" % _ )
 
-libraryDependencies += "org.squeryl" % "squeryl_2.10" % "0.9.5-6"
+libraryDependencies += "org.squeryl" % "squeryl_2.11" % "0.9.5-7"
 
 libraryDependencies += "postgresql" % "postgresql" % "9.1-901-1.jdbc4"
 

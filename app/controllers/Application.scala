@@ -3,7 +3,7 @@ package controllers
 import play.api.mvc.Action
 import play.api.mvc.Controller
 
-import models.User
+import models.{Database, User}
 
 object Application extends Controller {
 
@@ -11,7 +11,7 @@ object Application extends Controller {
     request =>
       val session = request.session
       session.get("connected").map { email =>
-        val user = User(email)
+        val user = new User(0, email, "ppp", "Delyan Raychev", false) // TODO: get the user from DB
         Ok(views.html.index(Some(user), "Hello, " + user.fullname + "!"))
       }.getOrElse {
         Ok(views.html.index(None, "Not logged in"))
@@ -19,11 +19,10 @@ object Application extends Controller {
   }
 
   def api = Action {
-    val u = new User(1, "de@delqn.com", "Delyan")
-    System.out.println(u.email)
-    models.User.create(u)
-    // User.create(u)
-    // System.out.println(u)
+    System.out.println("&&&&&&&&&&&&&")
+    val u = new User(0, "delyan@raychev.org", "ppp", "Delyan Raychev", true)
+    User.create(u)
+    System.out.println(u)
     Ok("{}").as("application/json")
   }
 

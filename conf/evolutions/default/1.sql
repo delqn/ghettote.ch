@@ -3,7 +3,7 @@
 # --- !Ups
 
 CREATE TABLE "users" (
-    id serial NOT NULL,
+    id BIGSERIAL NOT NULL,
     email varchar(255) NOT NULL,
     password varchar(255) NOT NULL,
     fullname varchar(255) NOT NULL,
