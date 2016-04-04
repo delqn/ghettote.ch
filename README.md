@@ -113,3 +113,12 @@ sbt \~compile stage
 Configure IntelliJ: https://www.jetbrains.com/help/idea/2016.1/getting-started-with-play-2-x.html?origin=old_help#use_code_assistance
 
 Run with a heroku DB connection: `DATABASE_URL=$(heroku config:get DATABASE_URL -a ghettotech)"?sslmode=require" activator \~ run`
+
+
+## IntelliJ config
+- Edit Run/Debug config
+- Add new Remote config
+  - Host: localhost, Port: 9999
+  - Add external tool
+    - Program:  DATABASE_URL=$(heroku config:get DATABASE_URL -a ghettotech)"?sslmode=require" /home/de/activator-1.3.9-minimal/bin/activator
+    - Parameters: -jvm-debug 9999 "~ run"
