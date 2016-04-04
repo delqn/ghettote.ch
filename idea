@@ -1,3 +1,3 @@
 #!/bin/bash
 
-DATABASE_URL=$(heroku config:get DATABASE_URL -a ghettotech)'?sslmode=require' ~/idea-IC-145.597.3/bin/idea.sh
+DATABASE_URL=$(heroku config:get DATABASE_URL -a ghettotech)'?ssl=true' ~/idea-IC-145.597.3/bin/idea.sh
