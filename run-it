@@ -1,3 +1,0 @@
-#!/bin/bash
-
-DATABASE_URL=$(heroku config:get DATABASE_URL -a ghettotech)"?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory" activator -jvm-debug "~run"
